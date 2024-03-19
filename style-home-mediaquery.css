@@ -5,7 +5,10 @@
    nav ul {
       backdrop-filter: blur(0px);
       display: flex;
-      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 95vh;
       flex-direction: column;
       clip-path: circle(0.1px at 0% 0%);
 
@@ -13,32 +16,34 @@
 
       li {
          opacity: 0;
-         transform: translateX(-2rem);
       }
 
       li:nth-child(1) {
-         transition: all .2s ease-in-out;
+         transition: all 1.2s ease-in-out;
       }
       li:nth-child(2) {
-         transition: all .4s ease-in-out;
+         transition: all 1.4s ease-in-out;
       }
       li:nth-child(3) {
-         transition: all .6s ease-in-out;
+         transition: all 1.6s ease-in-out;
       }
       li:nth-child(4) {
-         transition: all .8s ease-in-out;
+         transition: all 1.8s ease-in-out;
       }
       li:nth-child(5) {
-         transition: all 1s ease-in-out;
+         transition: all 2s ease-in-out;
       }
    }
 
    ul.activated {
+      padding-top: 1rem;
       backdrop-filter: blur(20px);
       display: flex;
       height: 95vh;
       flex-direction: column;
-      clip-path: circle(990px at 0% 0%);
+      align-items: center;
+      justify-content: flex-start;
+      clip-path: circle(1120px at 0% 0%);
 
       li {
          opacity: 1;
