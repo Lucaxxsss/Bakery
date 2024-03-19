@@ -5,7 +5,9 @@ function menu() {
    menu.classList.toggle('activated')
    if(menu.classList.contains('activated')) {
       menubtn.style.backdropFilter = 'blur(20px)'
+      menubtn.classList.add('active')
    } else {
       menubtn.style.backdropFilter = 'blur(0px)'
+      menubtn.classList.remove('active')
    }
 }

@@ -38,7 +38,7 @@ nav .menu {
    }
 }
 
-.menu:hover {
+.menu.active {
    cursor: pointer;
    div:nth-child(1) {
       opacity: 0;
