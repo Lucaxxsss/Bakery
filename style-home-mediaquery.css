@@ -10,12 +10,13 @@
       justify-content: flex-start;
       height: 95vh;
       flex-direction: column;
-      clip-path: circle(0.1px at 0% 0%);
+      clip-path: circle(1px at 0% 0%);
 
       transition: all 1s ease-in-out;
 
       li {
          opacity: 0;
+         transform: translateX(-6rem);
       }
 
       li:nth-child(1) {
