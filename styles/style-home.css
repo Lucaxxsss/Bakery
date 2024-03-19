@@ -92,8 +92,48 @@ nav ul{
       transition: all .2s ease-in-out;
    }
 
-   li:hover {
+   li:hover:nth-child(1) {
       border-bottom: 1px solid #ccc;
+   }
+
+   .has-menu {
+      a {
+         font-family: Enriqueta;
+      }
+   
+      position: relative;
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      justify-content: flex-start;
+   
+      .sub-menu {
+         visibility: hidden;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         display: flex;
+         flex-direction: column;
+   
+         li {
+            transform: translateY(-10px);
+            opacity: 0;
+            transition: opacity .5s ease-in-out, border-bottom .3s ease-in-out;
+         }
+      }
+   
+      &:hover .sub-menu {
+         visibility: visible;
+         li {
+            transform: translateY(0);
+            opacity: 1;
+         }
+
+         li:hover {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: .2rem;
+         }
+      }
    }
 
    }

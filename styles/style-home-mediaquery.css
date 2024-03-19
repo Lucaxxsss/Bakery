@@ -12,7 +12,7 @@
    }
 
    nav {
-      height: 92%;
+      height: 94.8%;
    }
 
    nav ul {
@@ -64,7 +64,7 @@
             padding: 1rem;
             height: 50px;
          }
-      
+
          header {
             position: absolute;
             top: 5rem;
@@ -99,6 +99,3 @@
             }
          }
    }
-
-  
-
