@@ -90,7 +90,7 @@ nav ul{
       border-bottom: 1px solid #ccc;
    }
 
-   li:nth-child(5) {
+   li:nth-child(3) {
       padding: .5rem 2rem;
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -99,7 +99,7 @@ nav ul{
       text-decoration: none;
    }
 
-   li:hover:nth-child(5) {
+   li:hover:nth-child(3) {
       background-color: rgba(0, 0, 0, 0.759);
    }
 }
@@ -117,6 +117,8 @@ header {
    align-items: center;
 
    color: white;
+
+   cursor: context-menu;
 
    h1,
    h2,
