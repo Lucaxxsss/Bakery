@@ -38,7 +38,7 @@
       display: flex;
       height: 95vh;
       flex-direction: column;
-      clip-path: circle(900px at 0% 0%);
+      clip-path: circle(990px at 0% 0%);
 
       li {
          opacity: 1;
