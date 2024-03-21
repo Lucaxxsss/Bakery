@@ -70,7 +70,6 @@
          }
 
          header {
-            height: calc(100vh - 15vh);
             position: absolute;
             z-index: 0;
             top: 5rem;
