@@ -235,4 +235,8 @@ header {
       }
 
    }
+
+   .has-menu-mediaquery {
+      display: none;
+   }
 }

@@ -3,10 +3,12 @@ function menu() {
    let menubtn = document.querySelector('nav .menu')
 
    menu.classList.toggle('activated')
+
    if(menu.classList.contains('activated')) {
       menubtn.style.backdropFilter = 'blur(20px)'
       menubtn.style.backgroundColor = 'rgba(0, 0, 0, 0.90)'
       menubtn.style.transition = 'background-color 1s ease-in-out'
+      menu.style.zIndex= '2'
 
       menubtn.classList.add('active')
    } else {
@@ -14,10 +16,4 @@ function menu() {
       menubtn.style.backgroundColor = 'transparent'
       menubtn.classList.remove('active')
    }
-}
-
-function pages() {
-   let pages = document.querySelector('div .pages ul')
-
-   pages.classList.toggle('actv')
 }

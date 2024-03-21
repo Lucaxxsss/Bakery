@@ -3,21 +3,21 @@
 @media (max-width: 670px) {
 
    .bg-video {
-      height: 100vh;
+      height: 100%;
 
    }
 
    .bg-video video{
-      height: 100vh;
+      height: 100%;
    }
 
    nav {
-      height: 94.8%;
+      height:calc(100vh - 50px);
    }
 
    nav ul {
       backdrop-filter: blur(0px);
-      height: 90%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -40,12 +40,16 @@
       li:nth-child(3) {
          transition: all 1.6s ease-in-out;
       }
+
+      .has-menu {
+         display: none;
+      }
       }
 
        ul.activated {
       padding-top: 1rem;
       backdrop-filter: blur(3px);
-      background-color: rgba(0, 0, 0, 0.9);
+      background-color: rgba(0, 0, 0, 0.900);
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -66,14 +70,14 @@
          }
 
          header {
+            height: calc(100vh - 15vh);
             position: absolute;
+            z-index: 0;
             top: 5rem;
-            height: 80vh;
-            z-index: -2;
       
             h3 {
                font-size: 14px;
-               width: 80%;
+               max-width: 80%;
             }
       
             .underline {
@@ -97,5 +101,106 @@
                }
          
             }
+
+            .has-menu-mediaquery {
+               display: block;
+
+               button {
+                  margin-top: 2rem;
+                  font-weight: bold;
+                  color: #222222;
+                  border-radius: 2rem;
+                  cursor: pointer;
+                  width: 95.02px;
+                  height: 42.66px;
+                  border: none;
+                  background-color: #ffffff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+                
+                button .span-mother {
+                  display: flex;
+                  overflow: hidden;
+                }
+                
+                button:hover .span-mother {
+                  position: absolute;
+                }
+                
+                button:hover .span-mother span {
+                  transform: translateY(1.2em);
+                  font-size: 20px;
+                }
+                
+                button .span-mother span:nth-child(1) {
+                  transition: 0.2s;
+                  font-family: 'Enriqueta',serif;
+                }
+                
+                button .span-mother span:nth-child(2) {
+                  transition: 0.3s;
+                  font-family: 'Enriqueta',serif;
+                }
+                
+                button .span-mother span:nth-child(3) {
+                  transition: 0.4s;
+                  font-family: 'Enriqueta',serif;
+                }
+                
+                button .span-mother span:nth-child(4) {
+                  transition: 0.5s;
+                  font-family: 'Enriqueta',serif;
+                }
+                
+                button .span-mother span:nth-child(5) {
+                  transition: 0.6s;
+                  font-family: 'Enriqueta',serif;
+                }
+                
+                button .span-mother span:nth-child(6) {
+                  transition: 0.7s;
+                }
+                
+                button .span-mother2 {
+                  display: flex;
+                  position: absolute;
+                  overflow: hidden;
+                }
+                
+                button .span-mother2 span {
+                  transform: translateY(-1.4em);
+                }
+                
+                button:hover .span-mother2 span {
+                  transform: translateY(0);
+                }
+                
+                button .span-mother2 span {
+                  transition: 0.2s;
+                }
+                
+                button .span-mother2 span:nth-child(2) {
+                  transition: 0.3s;
+                }
+                
+                button .span-mother2 span:nth-child(3) {
+                  transition: 0.4s;
+                }
+                
+                button .span-mother2 span:nth-child(4) {
+                  transition: 0.5s;
+                }
+                
+                button .span-mother2 span:nth-child(5) {
+                  transition: 0.6s;
+                }
+                
+                button .span-mother2 span:nth-child(6) {
+                  transition: 0.7s;
+                }
+                
          }
    }
+}
