@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @media (max-width: 670px) {
+   html, body {
+      overflow-y: hidden;
+   }
 
    .bg-video {
       height: 100vh;
