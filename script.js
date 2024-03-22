@@ -17,3 +17,9 @@ function menu() {
       menubtn.classList.remove('active')
    }
 }
+
+function bpages() {
+   let pages = document.getElementById('pagesclick')
+
+   pages.classList.toggle('actived')
+}

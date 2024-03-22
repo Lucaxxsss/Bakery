@@ -239,4 +239,8 @@ header {
    .has-menu-mediaquery {
       display: none;
    }
+
+   .pages-container{
+      display: none;
+   }
 }
