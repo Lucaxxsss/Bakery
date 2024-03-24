@@ -230,7 +230,7 @@
 @media (width <= 460px) {
    .bg-coffee {
       background-image: url(../../assets/images/cafe-bg-460.png);
-      background-size: contain;
+      background-size: cover;
       background-attachment: fixed;
       background-repeat: no-repeat;
    }
