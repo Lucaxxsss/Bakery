@@ -8,18 +8,18 @@
 
    header {
       overflow: hidden;
-      width: 100vw;
+      width: 100%;
       height: 100%;
 
       flex-direction: column;
       justify-content: center;
 
-      padding: 0;
+      padding: 0px;
 
       .presentation {
          overflow: hidden;
          h1, p {
-            width: 90vw;
+            width: 100vw;
             margin: auto;
             text-align: center;
          }

@@ -16,6 +16,7 @@
    background-image: url(../../assets/images/cafe-bg.png);
    background-size: cover;
    background-attachment: fixed;
+   width: 100%;
 }
 
 nav {
