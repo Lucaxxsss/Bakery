@@ -38,12 +38,13 @@
          top: 2rem;
 
          width: 343px;
+         height: 373px;
          background-color: white;
          padding:24px 18px;
-         border: 5px solid #7070702f;
+         border: 5px solid #c6c6c64a;
          border-radius: 12px;
 
-         filter: drop-shadow(2px 2px 15px #00000030);
+         filter: drop-shadow(2px 2px 15px #b5353530);
 
          .image-coffee {
             position: relative;
