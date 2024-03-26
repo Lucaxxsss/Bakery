@@ -3,10 +3,6 @@
 @media (width <= 460px) {
 
    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
       overflow-x: hidden;
    }
 
