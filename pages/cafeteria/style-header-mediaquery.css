@@ -4,6 +4,8 @@
 
    body {
       display: flex;
+      align-items: center;
+      justify-content: center;
       flex-direction: column;
       overflow-x: hidden;
    }
@@ -11,7 +13,7 @@
    header {
       overflow: hidden;
       width: 95vw;
-      height: 75vh;
+      height: 100vh;
 
       flex-direction: column;
       justify-content: center;
