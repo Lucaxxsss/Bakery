@@ -124,6 +124,7 @@ header {
       .coffee-demostration {
          .cfee img{
             width: 416px;
+            height: 100%;
             scale: 1.1;
             animation: backdrop-coffee 8s linear infinite;
          }
@@ -209,11 +210,11 @@ header {
 
 @keyframes backdrop-coffee {
    50% {
-      filter: drop-shadow(1px 1px 15px #301b00be);
+      filter: drop-shadow(1px 1px 0px #301b00be);
    }
 
    50% {
-      filter: drop-shadow(1px 1px 25px #301b00be);
+      filter: drop-shadow(1px 1px 8px #301b00be);
    }
 }
 
