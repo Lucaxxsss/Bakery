@@ -3,17 +3,18 @@
 @media (width <= 450px) {
 
    body {
-      width: 100vw;
       overflow-x: hidden;
    }
 
    header {
-      margin: 0px auto;
+      overflow-x: hidden;
       width: 100vw;
-      height: 80vh;
+      height: 75vh;
 
       flex-direction: column;
       justify-content: center;
+
+      padding: 0;
 
       .presentation {
          h1, p {
