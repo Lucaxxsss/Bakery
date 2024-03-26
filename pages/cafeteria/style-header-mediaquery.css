@@ -3,12 +3,13 @@
 @media (width <= 450px) {
 
    body {
+      display: flex;
+      flex-direction: column;
       overflow-x: hidden;
    }
 
    header {
-      overflow-x: hidden;
-      overflow-y: hidden;
+      overflow: hidden;
       width: 95vw;
       height: 100vh;
 
