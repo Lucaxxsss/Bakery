@@ -1,6 +1,6 @@
 @charset "UTF-8"; 
 
-@media (width <= 450px) {
+@media (width <= 460px) {
 
    body {
       display: flex;
