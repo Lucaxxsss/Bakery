@@ -47,6 +47,7 @@
       .coffee-demostration {
          .cfee img{
             width: 200px;
+            padding-bottom: 2.1rem;
             scale: 1.1;
             animation: backdrop-coffee 8s linear infinite;
          }

@@ -209,12 +209,12 @@ header {
 }
 
 @keyframes backdrop-coffee {
-   50% {
-      filter: drop-shadow(1px 1px 0px #301b00be);
+   0% {
+      filter: drop-shadow(1px 1px 15px #301b00be);
    }
 
-   50% {
-      filter: drop-shadow(1px 1px 8px #301b00be);
+   100% {
+      filter: drop-shadow(1px 1px 25px #301b00be);
    }
 }
 
