@@ -19,7 +19,7 @@
 }
 
 nav {
-   width: 85vw;
+   width: 80vw;
    margin: auto;
    display: flex;
    justify-content: space-between;
@@ -121,7 +121,7 @@ nav {
          #wind {
             opacity: 0;
             height: 22px;
-            /* rotate: 180deg; */
+            rotate: 180deg; 
             transition: all .5s ease-in-out;
          }
 

@@ -1,0 +1,114 @@
+@charset "UTF-8"; 
+
+@media (width <= 450px) {
+
+   body {
+      width: 100vw;
+      overflow-x: hidden;
+   }
+
+   header {
+      margin: 0px auto;
+      width: 100vw;
+      height: 80vh;
+
+      flex-direction: column;
+      justify-content: center;
+
+      .presentation {
+         h1, p {
+            width: 90vw;
+            margin: auto;
+            text-align: center;
+         }
+
+         h1 {
+            font-size: 38px;
+         }
+
+         p {
+            padding: 1rem 0rem;
+            font-size: 16px;
+         }
+      }
+
+      .buttons-header {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         margin: 1.2rem auto;
+         width: 600px;
+         justify-content: space-between;
+      }
+
+      .coffee-demostration {
+         .cfee img{
+            width: 200px;
+            scale: 1.1;
+            animation: backdrop-coffee 8s linear infinite;
+         }
+
+         .rating{
+            transition: all .3s ease-in-out;
+
+            img {
+               height: 76px;
+            }
+         }
+      }
+
+      .coffee-demostration {
+         position: relative;
+         margin: 1rem 1rem;
+
+         .rating{
+            margin-top: 2rem;
+            animation: popout .5s linear;
+            scale: 1;
+            opacity: 1;
+            position: absolute;
+            top: 0rem;
+
+            img:nth-child(1) {
+               width: 90px;
+               height: 100%;
+               position: relative;
+               top: 7rem;
+               left: -2rem;
+
+               scale: 1;
+
+               animation: rotation 5s linear infinite;
+               transition: scale 1.3s ease-in-out;
+            }
+            img:nth-child(2) {
+               width: 180px;
+               height: 100%;
+               position: relative;
+               top: -7rem;
+               left: -2rem;
+
+               scale: 1;
+
+               animation: rotation 5s linear infinite;
+               transition:scale .8s ease-in-out;
+            }
+            img:nth-child(3) {
+               width: 90px;
+               height: 100%;
+               position: relative;
+               top: -4rem;
+               left: 8.5rem;
+
+               scale: 1;
+
+               animation: rotation 5s linear infinite;
+
+               transition:scale .3s ease-in-out;
+            }
+         }
+      }
+   }
+}
+

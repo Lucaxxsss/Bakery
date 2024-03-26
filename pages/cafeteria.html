@@ -4,8 +4,13 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Cafeteria</title>
-   <link rel="stylesheet" href="cafeteria/style.css">
+
+   <link rel="stylesheet" href="cafeteria/style-nav.css">
    <link rel="stylesheet" href="cafeteria/style-nav-mediaquery.css">
+
+   <link rel="stylesheet" href="cafeteria/style-header.css">
+   <link rel="stylesheet" href="cafeteria/style-header-mediaquery.css">
+
 </head>
 <body>
    <div class="bg-coffee">
@@ -40,6 +45,38 @@
             </div>
          </div>
       </nav>
+
+      <header>
+         <div class="presentation">
+            <h1>Enjoy your <span>coffee</span> before your activity</h1>
+            <p>Boost your productivity and build your mood with a glass of coffee in the morning </p>
+
+               <div class="buttons-header">
+                  <div class="order-btn">
+                     <input type="button" value="Order Now" onclick="confeti()">
+                     <img src="../assets/icons/cookie-order-icon.png" alt="">
+                     <div class="confetti"><img src="../assets/icons/confetti-gif-8.gif" alt=""></div>
+                  </div>
+                  <div class="more-menu">
+                     <p>More menu</p>
+                  </div>
+               </div>
+
+         </div>
+
+         <div class="coffee-demostration">
+            <div class="cfee">
+               <img src="../assets/images/cup-coffee.png" alt="">
+            </div>
+
+            <div class="rating">
+               <img src="../assets/images/avaliation-1.png" alt="">
+               <img src="../assets/images/avaliation-2.png" alt="">
+               <img src="../assets/images/avaliation-3.png" alt="">
+            </div>
+         </div>
+      </header>
+
    </div>
 
    <script src="scriptcafeteria.js"></script>
