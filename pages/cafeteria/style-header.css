@@ -126,7 +126,7 @@ header {
             width: 416px;
             height: 100%;
             scale: 1.1;
-            animation: backdrop-coffee 8s linear infinite;
+            animation: backdrop-coffee 8s ease-in-out infinite;
          }
 
          .cfee {
