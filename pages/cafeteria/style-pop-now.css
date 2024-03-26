@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+:root {
+   --principal-color: #FF902A;
+   --dark-brow: #2F2105;
+   
+}
+
+.popular-now {
+   width: 80vw;
+   margin: auto;
+   h1 {
+      font-size: 32px;
+      color: var(--dark-brow);
+      line-height: 2rem;
+         span {
+            border-bottom: 4px solid #FF902A;
+            border-radius: 1px;
+         }
+   }
+
+   /* container geral */
+   .popular-coffees {
+      margin-top: 38px;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+
+      position: relative;
+      top: 0rem;
+      z-index: 999;
+
+      .special-coffee {
+         position: relative;
+         top: 2rem;
+
+         width: 343px;
+         background-color: white;
+         padding:24px 18px;
+         border: 5px solid #7070702f;
+         border-radius: 12px;
+
+         filter: drop-shadow(2px 2px 15px #00000030);
+
+         .image-coffee {
+            position: relative;
+
+            img {
+               border-radius: 12px;
+               width: 300px;
+            }
+
+            .rated-coffee {
+               position: absolute;
+               top: 7px;
+               left: 7px;
+               width: 65px;
+               height: 35px;
+               background-color: white;
+
+               border: solid 5px #00000026;
+               border-radius: 33px;
+
+               text-align: center;
+
+               span {
+                  font-weight: bold;
+               }
+
+               span::after {
+                  margin-left: 5px;
+                  content: url(../../assets/icons/akar-icons_star.png);
+               }
+            }
+         }
+
+         .info-coffee {
+               margin: 1rem 0rem;
+
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               span {
+                  color: rgb(171, 171, 171);
+                  font-weight: 600;
+               }
+         }
+
+         .coffee-taste {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .temperature {
+               input {
+                  cursor: pointer;
+
+                  color:#FFD28F;
+                  height: 32px;
+                  width: 64px;
+
+                  border: 2px solid #FFD28F;
+                  border-radius: 8px;
+
+                  transition: all .3s ease-in-out;
+               }
+
+               input:focus {
+                  border: 2px solid #FF902A;
+                  color:#FF902A;
+               }
+
+               input:hover {
+                  scale: 1.05;
+               }
+            }
+
+           .cart-container { 
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 43px;
+            height: 43px;
+
+            background-color: #FF902A;
+            border-radius: 30px;
+
+            img {
+               filter: invert(1);
+               height: 18px;
+
+               transition: all .3s ease-in-out;
+            }
+         }
+
+         .cart-container:hover {
+            img {
+               scale: 1.4;
+            }
+         }
+         }
+      }
+   }
+   .background {
+      position: absolute;
+      top: 9rem;
+      z-index: -1;
+      background-color: #F9D9AA;
+      width: 80vw;
+      height: 360px;
+
+      border-radius: 64px;
+   }
+}
