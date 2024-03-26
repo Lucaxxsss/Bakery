@@ -11,7 +11,7 @@
    header {
       overflow: hidden;
       width: 95vw;
-      height: 100vh;
+      height: 75vh;
 
       flex-direction: column;
       justify-content: center;
