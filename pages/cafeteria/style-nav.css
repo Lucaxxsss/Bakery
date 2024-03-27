@@ -12,6 +12,10 @@
    box-sizing: border-box;
 }
 
+html,body {
+   scroll-behavior: smooth;
+}
+
 .bg-coffee {
    background-image: url(../../assets/images/cafe-bg.png);
    background-size: cover;
@@ -66,10 +70,16 @@ nav {
 
    .search {
       display: flex;
+      flex-direction: column;
       align-items: center;
+
+      .search-englobe {
+         display: flex;
+      }
 
       .search-container {
          display: flex;
+         flex-direction: row;
          align-items: center;
          position: relative;
 
@@ -146,6 +156,45 @@ nav {
             animation: cartmov .5s linear;
             transform: translateX(5px);
          }
+      }
+
+      .results {
+         position: absolute;
+         z-index: 999;
+         top: 5.5rem;
+         background-color: white;
+         padding: .3rem 1rem;
+         overflow: visible;
+         transform: translateX(-1.8rem);
+         border-radius: 8px;
+
+            h2 {
+               color: #2F2105;
+
+               width: 170px;
+               margin: auto;
+
+               background-color: #6e6e6e24;
+               padding: .5rem .5rem;
+
+               margin: 1rem 0rem;
+               text-align: center;
+               font-size: 18px;
+               font-weight: 600;
+
+               border-radius: 8px;
+
+               transition: all .3s ease-in-out;
+            }
+
+            h2:hover {
+               width: 190px;
+               cursor: pointer;
+               background-color: #6e6e6e4f;
+               h2 {
+                  margin: auto;
+               }
+            }
       }
    }
 }
