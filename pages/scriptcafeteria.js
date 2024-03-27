@@ -87,6 +87,21 @@ searchContainer.addEventListener('click', function(event) {
    }
 });
 
+searchContainer.addEventListener('touchstart', function(event) {
+   anteriorresultsCoffee = searchContainer.querySelector('.results');
+   if (anteriorresultsCoffee) {
+      anteriorresultsCoffee.remove();
+   }
+   if (event.target.tagName === 'H2') {
+      const nomeCafe = event.target.textContent;
+      const cafeClicado = info.find(cafe =>
+         cafe.nome.toLowerCase() === nomeCafe.toLowerCase());
+      if (cafeClicado) {         
+         window.location.href = "#popnow";
+      }
+   }
+});
+
 document.addEventListener('click', function(event) {
    if (!searchContainer.contains(event.target) && event.target !== searchbar) {
       let anteriorresultsCoffee = searchContainer.querySelector('.results');
