@@ -74,9 +74,6 @@ searchbar.addEventListener('input', function () {
 // Adiciona o evento de clique aos resultados da pesquisa
 searchContainer.addEventListener('click', function(event) {
    anteriorresultsCoffee = searchContainer.querySelector('.results');
-   if (anteriorresultsCoffee) {
-      anteriorresultsCoffee.remove();
-   }
    if (event.target.tagName === 'H2') {
       const nomeCafe = event.target.textContent;
       const cafeClicado = info.find(cafe =>
@@ -89,9 +86,6 @@ searchContainer.addEventListener('click', function(event) {
 
 searchContainer.addEventListener('touchstart', function(event) {
    anteriorresultsCoffee = searchContainer.querySelector('.results');
-   if (anteriorresultsCoffee) {
-      anteriorresultsCoffee.remove();
-   }
    if (event.target.tagName === 'H2') {
       const nomeCafe = event.target.textContent;
       const cafeClicado = info.find(cafe =>
