@@ -166,11 +166,13 @@ nav {
          top: 5.5rem;
          background-color: white;
          padding: .3rem 1rem;
-         overflow: visible;
+         height: 208px;
+         overflow: hidden;
          transform: translateX(-1.8rem);
          border-radius: 8px;
 
             h2 {
+               overflow: hidden;
                display: flex;
                justify-content: space-between;
                align-items: center;
