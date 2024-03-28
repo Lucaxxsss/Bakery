@@ -16,15 +16,18 @@ let infoCoffeeArray = Array.from(infoCoffee);
 let info = [
    {
       nome: 'Espresso',
-      views: 29058
+      views: 29058,
+      id:'#popnow1'
    },
    {
       nome: 'Hazelnut Latte',
-      views: 43230
+      views: 43230,
+      id:'#popnow2'
    },
    {
       nome: 'Vanilla Latte',
-      views: 23203
+      views: 23203,
+      id:'#popnow3'
    }
 ];
 
@@ -46,6 +49,7 @@ function nameCoffee() {
 nameCoffee();
 
 let searchbar = document.getElementById('search');
+let searchbarClose = searchbar.nextElementSibling
 let searchContainer = document.querySelector('.search');
 
 searchbar.addEventListener('input', function () {
@@ -69,33 +73,35 @@ searchbar.addEventListener('input', function () {
    });
 
    searchContainer.appendChild(searchDiv);
+
+   searchDiv.addEventListener('click', function(event) {
+      console.log(resultadosCafe.length)
+      const resultsCoffee = event.target.textContent
+      const clickedCafe = info.find(cafe => cafe.nome === resultsCoffee)
+
+      if (clickedCafe) {
+         window.location.href = clickedCafe.id
+      }
+   });
+
+   searchbar.addEventListener('input', function (event) {
+      if (event.target.value === '') {
+         let anteriorresultsCoffee = searchContainer.querySelector('.results');
+         if (anteriorresultsCoffee) {
+         anteriorresultsCoffee.remove();
+    }
+     }
+   })
+
 });
+
+searchbarClose.addEventListener('click', function() {
+   console.log('FUCK')
+})
 
 
 // Adiciona o evento de clique aos resultados da pesquisa
-searchContainer.addEventListener('click', function(event) {
-   anteriorresultsCoffee = searchContainer.querySelector('.results');
-   if (event.target.tagName === 'H2') {
-      const nomeCafe = event.target.textContent;
-      const cafeClicado = info.find(cafe =>
-         cafe.nome.toLowerCase() === nomeCafe.toLowerCase());
-      if (cafeClicado) {         
-         window.location.href = "#popnow";
-      }
-   }
-});
 
-searchContainer.addEventListener('touchstart', function(event) {
-   anteriorresultsCoffee = searchContainer.querySelector('.results');
-   if (event.target.tagName === 'H2') {
-      const nomeCafe = event.target.textContent;
-      const cafeClicado = info.find(cafe =>
-         cafe.nome.toLowerCase() === nomeCafe.toLowerCase());
-      if (cafeClicado) {         
-         window.location.href = "#popnow";
-      }
-   }
-});
 
 document.addEventListener('click', function(event) {
    if (!searchContainer.contains(event.target) && event.target !== searchbar) {
