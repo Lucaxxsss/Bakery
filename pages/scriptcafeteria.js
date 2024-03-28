@@ -49,14 +49,13 @@ function nameCoffee() {
 nameCoffee();
 
 let searchbar = document.getElementById('search');
-let searchbarClose = searchbar.nextElementSibling
 let searchContainer = document.querySelector('.search');
 
 searchbar.addEventListener('input', function () {
-   const termoPesquisa = searchbar.value.toLowerCase();
+   const termoPesquisa = searchbar.value.toLowerCase(); //tranforma os caracteres do input em letras minusculas
    const resultadosCafe = info.filter(cafe =>
-      cafe.nome.toLowerCase().includes(termoPesquisa));
-
+      cafe.nome.toLowerCase().includes(termoPesquisa)); //procura pra cada cafe do array 'info' o objeto com a chave nome e deixa em minusculo, .includes(), inclui o termoPesquisa, verifica se ele tambem foi convertido para minusculas, e isso retorna 'true' caso for verdadeiro, e 'false' caso contrario
+      
    let anteriorresultsCoffee = searchContainer.querySelector('.results');
    if (anteriorresultsCoffee) {
       anteriorresultsCoffee.remove();

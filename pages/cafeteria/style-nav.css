@@ -171,9 +171,14 @@ nav {
          border-radius: 8px;
 
             h2 {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
                color: #2F2105;
 
-               width: 170px;
+               height: 45px;
+               width: 250px;
                margin: auto;
 
                background-color: #6e6e6e24;
@@ -189,8 +194,17 @@ nav {
                transition: all .3s ease-in-out;
             }
 
+            h2::before {
+               content: url(../../assets/icons/akar-icons_search.png);
+               line-height: 0;
+            }
+
+            h2::after {
+               content: '';
+            }
+
             h2:hover {
-               width: 190px;
+               width: 220px;
                cursor: pointer;
                background-color: #6e6e6e4f;
                h2 {
