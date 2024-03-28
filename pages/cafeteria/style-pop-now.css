@@ -50,11 +50,34 @@
             position: relative;
             overflow: hidden;
             border-radius: 12px;
+            height: 226px;
+
+            figcaption {
+               opacity: 0;
+               background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
+               height: 226px;
+               width: 100%;
+               position: absolute;
+               top: 0rem;
+               p {
+                  color: white;
+                  font-weight: 500;
+                  font-size: 14px;
+                  margin: 0 auto;
+                  width: 290px;
+                  text-align: center;
+
+                  transform: translateY(12rem);
+                  transition: all .7s ease-in-out;
+               }
+               transition: all .5s ease-in-out;
+            }
 
             img {
-               width: 300px;
+               max-width: 300px;       
+               height: 226px;
                border-radius: 12px;
-               filter: grayscale(.3);
+               filter: grayscale(0);
                overflow: hidden;
                transition: all .5s ease-in-out;
             }
@@ -160,6 +183,25 @@
          img {
             filter: grayscale(0);
             scale: 1.4;
+         }
+
+         figcaption {
+            opacity: 1;
+            background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+            height: 226px;
+            width: 100%;
+            position: absolute;
+            top: 0rem;
+            p {
+               color: white;
+               font-weight: 600;
+               font-size: 12px;
+               width: 270px;
+               text-align: center;
+               line-height: 1.3rem;
+
+               transform: translateY(9.5rem);
+            }
          }
       }
    }
