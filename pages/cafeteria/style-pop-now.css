@@ -48,10 +48,15 @@
 
          .image-coffee {
             position: relative;
+            overflow: hidden;
+            border-radius: 12px;
 
             img {
-               border-radius: 12px;
                width: 300px;
+               border-radius: 12px;
+               filter: grayscale(.3);
+               overflow: hidden;
+               transition: all .5s ease-in-out;
             }
 
             .rated-coffee {
@@ -149,6 +154,16 @@
          }
       }
    }
+
+   .special-coffee:hover {
+      .image-coffee {
+         img {
+            filter: grayscale(0);
+            scale: 1.4;
+         }
+      }
+   }
+
    .background {
       position: absolute;
       top: 9rem;

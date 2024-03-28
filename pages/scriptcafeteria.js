@@ -71,6 +71,7 @@ searchbar.addEventListener('input', function () {
    searchContainer.appendChild(searchDiv);
 });
 
+
 // Adiciona o evento de clique aos resultados da pesquisa
 searchContainer.addEventListener('click', function(event) {
    anteriorresultsCoffee = searchContainer.querySelector('.results');
@@ -104,3 +105,6 @@ document.addEventListener('click', function(event) {
       }
    }
 });
+
+
+
