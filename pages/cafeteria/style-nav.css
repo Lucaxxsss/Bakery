@@ -198,6 +198,8 @@ nav {
             h2::before {
                content: url(../../assets/icons/akar-icons_search.png);
                line-height: 0;
+
+               scale: .8;
             }
 
             h2::after {
