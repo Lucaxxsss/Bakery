@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@media (width <= 460px) {
+   .delivery-service {
+      width: 100vw;
+      margin: 10rem 0rem 0rem 0rem;
+   
+      h1 {
+         text-align: center;
+         font-size: 1.5rem;
+         line-height: 0rem;
+         span {
+            border-bottom: 4px solid var(--orange);
+         }
+   
+         margin-bottom: 1rem;
+      }
+   
+      .services {
+         display: flex;
+         flex-wrap: nowrap;
+         justify-content:space-between;
+         width: 95vw;
+   
+         .service {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+   
+            h2,span {
+               text-align: center;
+               color: var(--brown);
+            }
+   
+            h2 {
+               font-size: .7rem;
+               width: 90px;
+            }
+   
+            span {
+               width: 100px;
+               font-size: .7rem;
+            }
+         }
+   
+         .choose {
+            div:nth-child(1) {
+               position: relative;
+               img {
+                  height: 60px;
+               }
+            }
+            div:nth-child(2) {
+               position: absolute;
+               top: 2rem;
+               left: 1.8rem;
+   
+               img {
+                  height: 40px;
+                  animation: handClicker 1.2s infinite linear;
+               }
+            }
+   
+         }
+   
+         .delivery {
+            img {
+               height: 60px;
+               animation: carMove 6s infinite linear;
+            }
+         }
+   
+         .enjoy {
+            img {
+               height: 60px;
+            }
+         }
+      }
+   }
+
+   @keyframes carMove {
+      0% {
+         scale: 0.95;
+         opacity: 0;
+         transform: translateX(-1rem);
+      }
+   
+      10% {
+         scale: 1;
+         opacity: 1;
+      }
+   
+      50% {
+         opacity: 1;
+      }
+   
+      80% {
+         opacity: 1;
+      }
+   
+      90% {
+         scale: 0.95;
+      }
+   
+      100% {
+         scale: 0.95;
+         opacity: 0;
+         transform: translateX(1rem);
+      }
+   }
+}
