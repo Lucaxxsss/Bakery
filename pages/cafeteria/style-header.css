@@ -126,7 +126,7 @@ header {
             width: 416px;
             height: 100%;
             scale: 1.1;
-            animation: backdrop-coffee 8s ease-in-out infinite;
+            animation: backdrop-coffee 5s linear infinite;
          }
 
          .cfee {
@@ -210,15 +210,15 @@ header {
 
 @keyframes backdrop-coffee {
    0% {
-      filter: drop-shadow(1px 1px 25px #301b00be);
+      filter: drop-shadow(1px 1px 35px #ff912ab6);
    }
 
    50% {
-      filter: drop-shadow(1px 1px 15px #301b00be);
+      filter: drop-shadow(1px 1px 15px #ff912ab6);
    }
 
    100% {
-      filter: drop-shadow(1px 1px 25px #301b00be);
+      filter: drop-shadow(1px 1px 35px #ff912ab6);
    }
 }
 
