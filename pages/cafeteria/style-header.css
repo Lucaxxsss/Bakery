@@ -148,7 +148,7 @@ header {
             scale: 1;
             opacity: 1;
             position: absolute;
-            top: 22.5rem;
+            top: 27.5rem;
 
             img {
                height: 76px;    
@@ -159,6 +159,7 @@ header {
                height: 100%;
                position: relative;
                top: 10rem;
+               left: -2rem;
 
                scale: 1;
 
@@ -170,7 +171,7 @@ header {
                height: 100%;
                position: relative;
                top: -7rem;
-               left: -10rem;
+               left: -12rem;
 
                scale: 1;
 
@@ -181,7 +182,7 @@ header {
                width: 150px;
                height: 100%;
                position: relative;
-               top: -3rem;
+               top: 2rem;
                left: -8rem;
 
                scale: 1;
