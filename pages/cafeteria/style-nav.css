@@ -162,6 +162,7 @@ nav {
          pointer-events: all;
 
          position: absolute;
+         top: 5.4rem;
          z-index: 9999;
          background-color: white;
          padding: .3rem 1rem;
@@ -206,7 +207,6 @@ nav {
             }
 
             h2:hover {
-               width: 220px;
                cursor: pointer;
                background-color: #6e6e6e4f;
                h2 {

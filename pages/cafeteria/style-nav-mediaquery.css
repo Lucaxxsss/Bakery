@@ -355,14 +355,6 @@
    
                   transition: all .3s ease-in-out;
                }
-   
-               h2:hover {
-                  width: 100%;
-                  cursor: pointer;
-                  h2 {
-                     margin: auto;
-                  }
-               }
                
          } 
       }

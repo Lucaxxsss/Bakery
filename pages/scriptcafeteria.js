@@ -1,3 +1,4 @@
+
 function menuclick() {
    let hamb = document.querySelector('.menu-hamb')
    let nav = document.getElementById('listmenu')
@@ -93,11 +94,6 @@ searchbar.addEventListener('input', function () {
    })
 
 });
-
-searchbarClose.addEventListener('click', function() {
-   console.log('FUCK')
-})
-
 
 // Adiciona o evento de clique aos resultados da pesquisa
 
