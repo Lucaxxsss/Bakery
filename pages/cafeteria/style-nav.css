@@ -12,10 +12,6 @@
    box-sizing: border-box;
 }
 
-html,body {
-   scroll-behavior: smooth;
-}
-
 .bg-coffee {
    background-image: url(../../assets/images/cafe-bg.png);
    background-size: cover;
