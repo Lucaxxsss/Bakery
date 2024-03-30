@@ -113,7 +113,7 @@
 
          <div class="popular-coffees">
 
-            <div class="special-coffee" id="popnow1">
+            <div class="special-coffee service" id="popnow1">
                <div class="image-coffee">
                   <img src="../assets/images/coffees/featured-cafe-1.jpg" 
                   alt="">
@@ -137,7 +137,7 @@
                </div>
             </div>
 
-            <div class="special-coffee" id="popnow2">
+            <div class="special-coffee service" id="popnow2">
                <div class="image-coffee">
                   <img src="../assets/images/coffees/featured-cafe-2.jpg" alt="">
                   <figcaption>
@@ -159,7 +159,7 @@
                </div>
             </div>
 
-            <div class="special-coffee" id="popnow3">
+            <div class="special-coffee service" id="popnow3">
                <div class="image-coffee">
                   <img src="../assets/images/coffees/featured-cafe-3.jpg" alt="">
                   <figcaption>
@@ -221,6 +221,22 @@
    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
 
    <script>
+      let deliverys = document.querySelectorAll('.service')
+      console.log(deliverys)
+
+      deliverys.forEach(delivery => {
+         let tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: delivery,
+					start: 'top bottom',
+					end: 'bottom 90%',
+					scrub:true
+				}
+			})
+
+         tl.fromTo(delivery, {xPercent: -100, opacity: -2}, {xPercent: 0, opacity: 1})
+      })
+
       const lenis = new Lenis()
 
       lenis.on('scroll', ScrollTrigger.update)
