@@ -29,6 +29,36 @@ let info = [
       nome: 'Vanilla Latte',
       views: 23203,
       id:'#popnow3'
+   },
+   {
+      nome: 'Sandwich',
+      views: 13203,
+      id:'#popnow4'
+   }, 
+   {
+      nome: 'Hot Milk',
+      views: 15533,
+      id:'#popnow5'
+   },
+   {
+      nome: 'Coffe Ice Cream',
+      views: 3703,
+      id:'#popnow6'
+   },
+   {
+      nome: 'Cappucino',
+      views: 11983,
+      id:'#popnow7'
+   },
+   {
+      nome: 'Moccacinno',
+      views: 7564,
+      id:'#popnow8'
+   },
+   {
+      nome: 'Waffle Ice Creme',
+      views: 25678,
+      id:'#popnow9'
    }
 ];
 
