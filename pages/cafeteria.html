@@ -18,6 +18,9 @@
    <link rel="stylesheet" href="cafeteria/style-delivery-service.css">
    <link rel="stylesheet" href="cafeteria/style-delivery-service-mediaquery.css">
 
+   <link rel="stylesheet" href="cafeteria/style-about-us.css">
+   <link rel="stylesheet" href="cafeteria/style-about-us-mediaquery.css">
+
    <style>
       html.lenis, html.lenis body {
       height: auto;
@@ -57,7 +60,7 @@
 
          <div class="menu" id="listmenu">
             <ul>
-               <li><a href="#">About us</a></li>
+               <li><a href="#aboutus">About us</a></li>
                <li><a href="#popnow">Our Product</a></li>
                <li><a href="#aboutDelivery">Delivery</a></li>
             </ul>
@@ -214,6 +217,29 @@
       </div>
    </section>
 
+   <section class="aboutus" id="aboutus">
+      <div class="background">
+         <div class="about-container">
+            <img src="../assets/images/aboutUs-coffe.png" alt="" class="service">
+            
+            <div class="about-us rightSide">
+               <h2>About <span>us</span></h2>
+               <h3>We provide quality coffee, and ready to deliver.</h3>
+
+               <p>We are a company that makes and distributes delicious drinks. our main product is made with a secret recipe and available in stores worldwide.</p>
+
+               <button>Get your coffee</button>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+
+
+
+
    <script src="scriptcafeteria.js"></script>
    
    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -236,6 +262,20 @@
 			})
 
          tl.fromTo(delivery, {xPercent: -100, opacity: -2}, {xPercent: 0, opacity: 1})
+      })
+
+      gsap.set('.rightSide', {
+         x:50,
+         opacity:-2
+      })
+
+      gsap.to('.rightSide', {
+         x:0, opacity:1, scrollTrigger:{
+               trigger: '.rightSide',
+					start: 'top bottom',
+					end: 'bottom 80%',
+               scrub: true
+         }
       })
 
       const lenis = new Lenis()

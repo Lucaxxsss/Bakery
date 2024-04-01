@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media (width <= 460px) {
+   .aboutus {
+      margin-top: 6rem;
+
+      .background {
+         padding-bottom: 3rem;
+
+         .about-container {
+   
+            img {
+               height: 350px;
+
+               position: relative;
+               top: -6rem;
+            }
+   
+            .about-us{
+               width: 480px;
+               position: relative;
+               top: -3rem;
+   
+               h2 {
+                  text-align: center;
+
+                  font-size: 1.5rem;
+                  letter-spacing: 2px;
+   
+                  span {
+                     border-bottom: 4px solid #FF902A;
+                     border-radius: 2px;
+                  }
+               }
+   
+               h3 {
+                  margin: 1rem 0rem;
+   
+                  width: 100%;
+                  font-size: 1.0rem;
+               }
+   
+               p{
+                  color: #5d5c5b;
+                  font-size: 12px;
+   
+                  margin-bottom: 1rem;
+               }
+   
+               button {
+                  width: 100%;
+                  margin: 0 auto;
+               }
+            }
+         }
+      }
+   }
+}
