@@ -12,6 +12,7 @@ function menuclick() {
 }
 
 let infoCoffee = document.getElementsByClassName('info-coffee');
+console.log(infoCoffee)
 let infoCoffeeArray = Array.from(infoCoffee);
 
 let info = [
