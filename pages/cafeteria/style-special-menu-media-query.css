@@ -6,20 +6,19 @@
    
 }
 
-html {
-   scroll-behavior: smooth;
-}
-
+@media (width <= 460px) {
 .popular-nows {
-   padding: 5rem 0rem;
-   width: 80vw;
+   padding: 10rem 0rem;
+   width: 100vw;
    margin:2rem auto;
 
    position: relative;
 
-   height: 120vh;
+   height: 200vh;
 
    h1 {
+      text-align: center;
+
       font-size: 32px;
       color: var(--dark-brow);
       line-height: 2rem;
@@ -32,7 +31,7 @@ html {
    /* container geral */
    .popular-coffeess {
       position: absolute;
-      top: 10rem;
+      top: 13rem;
 
       margin-top: 80px;
       
@@ -44,7 +43,6 @@ html {
 
 
       .special-coffee {
-         cursor: pointer;
 
          width: 343px;
          height: 373px;
@@ -218,7 +216,9 @@ html {
 
    .popular-coffeesss {
       position: absolute;
-      top: 10rem;
+      top: 13rem;
+
+      padding-bottom: 5rem;
 
       z-index: -1;
 
@@ -231,21 +231,16 @@ html {
       flex-wrap: wrap;
 
       .special-coffee {
-         cursor: pointer;
-
          width: 343px;
          height: 373px;
          background-color: white;
          padding:24px 18px;
          border: 5px solid #c6c6c64a;
          border-radius: 12px;
-         z-index: 0;
 
          filter: drop-shadow(2px 2px 15px #45303074);
-         
 
          .image-coffee {
-            object-fit: cover;
             position: relative;
             overflow: hidden;
             border-radius: 12px;
@@ -273,8 +268,7 @@ html {
             }
 
             img {
-               object-fit: cover;
-               width: 300px;       
+               max-width: 300px;       
                height: 226px;
                border-radius: 12px;
                filter: grayscale(0);
@@ -380,25 +374,18 @@ html {
    }
 
    .pages {
-      margin-top: 4.5rem;
+      margin-top: 2.5rem;
       display: flex;
       justify-content: center;
-      align-items: center;
-      gap: 1rem;
+      gap: .8rem;
       width: 100%;
-      height: 20px;
-
-      label {
-         transform: translateX(8px);
-      }
 
       input {
          cursor: pointer;
-         width: 25px;
-         height: 25px;
+         width: 20px;
+         height: 20px;
          accent-color: #cd6d13;
-
-         transition: all .2s ease-in-out;
       }
    }
+}
 }

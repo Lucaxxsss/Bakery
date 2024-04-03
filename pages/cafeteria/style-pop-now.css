@@ -21,6 +21,8 @@
 
    /* container geral */
    .popular-coffees {
+      cursor: pointer;
+
       margin-top: 38px;
       
       display: flex;
@@ -31,10 +33,11 @@
 
       position: relative;
       top: 0rem;
-      z-index: 999;
+      z-index: 0;
 
       .special-coffee {
          position: relative;
+         z-index: 0;
          top: 2rem;
 
          width: 343px;
@@ -215,5 +218,92 @@
       height: 360px;
 
       border-radius: 64px;
+   }
+}
+
+.fullscreen {
+   z-index: 999;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 1000vh;
+   background-color: rgba(0, 0, 0, 0.454);
+   backdrop-filter: blur(5px);
+
+   .bigmenu {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      transform: translate(-50%, 50%);
+
+      width: 50%;
+      height: 5%;
+      background-color: white;
+
+      border-radius: 12px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+         width: 300px;
+         height: 220px;
+         object-fit: cover;
+         border-radius: 12px;
+         
+         filter: drop-shadow(1px 1px 20px rgba(34, 27, 24, 0.722));
+      }
+
+      .top {
+         padding: .5rem 1.5rem;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         height: 80px;
+
+         h1 {
+            width: 100%;
+            text-align: center;
+            transform: translateY(-5px);
+
+            font-weight: 600;
+            color: #2d2a24;
+         }
+
+         .closebar {
+            scale: 0.95;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            div {
+               width: 25px;
+               height: 2px;
+               background-color: rgb(38, 36, 36);
+               margin: .2rem 0rem;
+            }
+
+            div:nth-child(1) {
+               rotate: 44deg;
+            }
+            div:nth-child(2) {
+               rotate: -44deg;
+               transform: translateY(-6.5px) translateX(4.5px);
+            }
+
+            transition: all .2s ease-in-out;
+         }
+         .closebar:hover {
+            rotate: 360deg;
+            scale: 1.05;
+            div {background-color: red;}
+         }
+      }
    }
 }
