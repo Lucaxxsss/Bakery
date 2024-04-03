@@ -8,15 +8,15 @@
 
 @media (width <= 460px) {
 .popular-nows {
-   overflow-y: scroll;
+   overflow-y: auto;
    overflow-x: hidden;
    
    padding: 10rem 0rem;
    width: 100vw;
-   height: 2980px;
+   height: 2880px;
    margin:0rem auto;
 
-   position: relative;
+   z-index: 999;
 
    h1 {
       position: relative;
