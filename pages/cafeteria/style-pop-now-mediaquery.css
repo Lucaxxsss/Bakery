@@ -3,11 +3,13 @@
 @media (width <= 460px) {
    .popular-now {
       .background {
+         overflow-x: hidden;
+
          position: absolute;
          top: 9rem;
          z-index: -1;
          background-color: #F9D9AA;
-         width: 100vw;
+         width: 100dvw;
          height: 95%;
    
          border-radius: 4px;
@@ -31,7 +33,7 @@
    
          transform: translate(-50%, 50%);
    
-         width: 80%;
+         width: 90%;
          height: 5%;
          background-color: white;
    
