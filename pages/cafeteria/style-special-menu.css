@@ -20,9 +20,6 @@ html {
    height: 120vh;
 
    h1 {
-      position: relative;
-      top: -3rem;
-
       font-size: 32px;
       color: var(--dark-brow);
       line-height: 2rem;
@@ -381,8 +378,8 @@ html {
    }
 
    .pages {
-      position: absolute;
-      top: 4rem;
+      position: relative;
+      top: -2rem;
 
       margin-top: 4.5rem;
       display: flex;

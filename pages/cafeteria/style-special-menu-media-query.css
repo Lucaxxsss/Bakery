@@ -19,9 +19,6 @@
    z-index: 999;
 
    h1 {
-      position: relative;
-      top: -6rem;
-
       text-align: center;
 
       font-size: 32px;
@@ -374,7 +371,7 @@
    }
 
    .pages {
-      top: 12rem;
+      top: -3rem;
 
       margin-top: 0rem;
       display: flex;
