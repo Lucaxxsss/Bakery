@@ -45,6 +45,8 @@ html {
       gap: 60px;
       flex-wrap: wrap;
 
+      transition: all .6s ease-in-out;
+
       .special-coffee {
          cursor: pointer;
 
@@ -188,8 +190,6 @@ html {
          }
          }
       }
-
-      transition: all .3s ease-in-out;
    }
 
    .special-coffee:hover {
@@ -230,6 +230,8 @@ html {
       gap: 60px;
       flex-wrap: wrap;
 
+      transition: all .6s ease-in-out;
+
       .special-coffee {
          cursor: pointer;
 
@@ -269,7 +271,6 @@ html {
                   transform: translateY(12rem);
                   transition: all .7s ease-in-out;
                }
-               transition: all .5s ease-in-out;
             }
 
             img {
@@ -402,7 +403,7 @@ html {
          height: 25px;
          accent-color: #cd6d13;
 
-         transition: all .2s ease-in-out;
+         transition: all .4s ease-in-out;
       }
    }
 }
