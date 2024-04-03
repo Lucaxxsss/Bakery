@@ -195,12 +195,12 @@ let specialMenu = document.querySelector('.popular-coffeess')
 let specialMenu2 = document.querySelector('.popular-coffeesss')
 
 radioOne.addEventListener('click', () => {
-   specialMenu2.style.zIndex = '-1'
-   specialMenu.style.zIndex = '2'
+   specialMenu2.style.opacity = '-1'
+   specialMenu.style.opacity = '2'
 })
 
 radioTwo.addEventListener('click', () => {
-   specialMenu2.style.zIndex = '2'
+   specialMenu2.style.opacity = '2'
 })
 
 

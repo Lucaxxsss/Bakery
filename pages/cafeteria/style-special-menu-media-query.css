@@ -8,17 +8,20 @@
 
 @media (width <= 460px) {
 .popular-nows {
+   overflow-y: scroll;
    overflow-x: hidden;
-
+   
    padding: 10rem 0rem;
    width: 100vw;
-   margin:2rem auto;
+   height: 2980px;
+   margin:0rem auto;
 
    position: relative;
 
-   height: 212vh;
-
    h1 {
+      position: relative;
+      top: -3rem;
+
       text-align: center;
 
       font-size: 32px;
@@ -33,7 +36,7 @@
    /* container geral */
    .popular-coffeess {
       position: absolute;
-      top: 13rem;
+      top: 12rem;
 
       margin-top: 80px;
       
@@ -217,12 +220,7 @@
    }
 
    .popular-coffeesss {
-      position: absolute;
-      top: 13rem;
-
       padding-bottom: 5rem;
-
-      z-index: -1;
 
       margin-top: 80px;
       
@@ -376,7 +374,9 @@
    }
 
    .pages {
-      margin-top: 2.5rem;
+      top: 13rem;
+
+      margin-top: 0rem;
       display: flex;
       justify-content: center;
       gap: .8rem;
