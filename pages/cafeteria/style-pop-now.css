@@ -310,7 +310,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         width: 100%;   
+         width: 100dvw;   
 
          margin: 2rem 0rem;
 
@@ -348,7 +348,7 @@
       }
 
       .buyDiv {
-         width: 100%;
+         width: 100dvw;
          display: flex;
          align-items: center;
          justify-content: center;
