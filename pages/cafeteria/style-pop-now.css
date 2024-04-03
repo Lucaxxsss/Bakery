@@ -237,7 +237,7 @@
 
       transform: translate(-50%, 50%);
 
-      width: 50%;
+      width: 50dvw;
       height: 5%;
       background-color: white;
 
@@ -266,7 +266,6 @@
          height: 80px;
 
          h1 {
-            width: 100%;
             text-align: center;
             transform: translateY(-5px);
 
@@ -274,7 +273,7 @@
             color: #2d2a24;
          }
 
-         .closebar {
+         .closebar { 
             scale: 0.95;
 
             display: flex;
@@ -310,7 +309,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
-         width: 100dvw;   
+         width: 100%;   
 
          margin: 2rem 0rem;
 
@@ -348,7 +347,7 @@
       }
 
       .buyDiv {
-         width: 100dvw;
+         width: 100%;
          display: flex;
          align-items: center;
          justify-content: center;
