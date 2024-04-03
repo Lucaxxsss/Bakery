@@ -244,8 +244,37 @@ CoffeesArray.forEach((cafe, index) => {
       let image = document.createElement('img')
       image.src = info[index].img
 
+      let cartDiv = document.createElement('div')
+      cartDiv.classList.add('cart-div')
+
+      let cartQntd = document.createElement('span')
+      cartQntd.innerHTML = '0'
+      let cartGain = document.createElement('span')
+      cartGain.innerHTML = '>>'
+      let cartLoose = document.createElement('span')
+      cartLoose.innerHTML = '<<'
+
+      cartDiv.appendChild(cartLoose)
+      cartDiv.appendChild(cartQntd)
+      cartDiv.appendChild(cartGain)
+
+      let buyDiv = document.createElement('div')
+
+      let buyBtn = document.createElement('button')
+      buyBtn.innerHTML = 'Finalizar compra'
+
+      let cartBtn = document.createElement('p')
+      cartBtn.innerHTML = 'Ver carinho'
+
+      buyDiv.appendChild(buyBtn)
+      buyDiv.appendChild(cartBtn)
+      
+      buyDiv.classList.add('buyDiv')
+
       bigMenu.appendChild(topPart)
       bigMenu.appendChild(image)
+      bigMenu.appendChild(cartDiv)
+      bigMenu.appendChild(buyDiv)
 
       fullScreen.appendChild(bigMenu)
 
