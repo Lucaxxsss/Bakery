@@ -11,9 +11,9 @@
    overflow-y: auto;
    overflow-x: hidden;
    
-   padding: 10rem 0rem;
+   padding: 2rem 0rem;
    width: 100vw;
-   height: 2880px;
+   height: 2780px;
    margin:0rem auto;
 
    z-index: 999;
@@ -33,9 +33,7 @@
    /* container geral */
    .popular-coffeess {
       position: absolute;
-      top: 12rem;
-
-      margin-top: 80px;
+      top: 4rem;
       
       display: flex;
       justify-content: center;
@@ -217,10 +215,6 @@
    }
 
    .popular-coffeesss {
-      padding-bottom: 5rem;
-
-      margin-top: 80px;
-      
       display: flex;
       justify-content: center;
       align-items: center;
@@ -371,7 +365,7 @@
    }
 
    .pages {
-      top: -3rem;
+      top: 2rem;
 
       margin-top: 0rem;
       display: flex;
