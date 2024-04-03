@@ -214,7 +214,6 @@ CoffeesArray.forEach((cafe, index) => {
       fullScreen.classList.add('fullscreen')
 
       document.body.appendChild(fullScreen)
-      document.body.style.overflow = 'hidden'
 
       let bigMenu = document.createElement('div')
       bigMenu.classList.add('bigmenu')

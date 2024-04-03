@@ -8,13 +8,15 @@
 
 @media (width <= 460px) {
 .popular-nows {
+   overflow-x: hidden;
+
    padding: 10rem 0rem;
    width: 100vw;
    margin:2rem auto;
 
    position: relative;
 
-   height: 200vh;
+   height: 212vh;
 
    h1 {
       text-align: center;
