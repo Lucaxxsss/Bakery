@@ -20,97 +20,106 @@ let info = [
       nome: 'Espresso',
       views: 29058,
       id:'#popnow1',
-      img: '../assets/images/coffees/featured-cafe-1.jpg'
+      img: '../assets/images/coffees/featured-cafe-1.jpg',
+      preco: 2.50
    },
    {
       nome: 'Hazelnut Latte',
       views: 43230,
       id:'#popnow2',
-      img: '../assets/images/coffees/featured-cafe-2.jpg'
+      img: '../assets/images/coffees/featured-cafe-2.jpg',
+      preco: 4.50
    },
    {
       nome: 'Vanilla Latte',
       views: 23203,
       id:'#popnow3',
-      img: '../assets/images/coffees/featured-cafe-3.jpg'
+      img: '../assets/images/coffees/featured-cafe-3.jpg',
+      preco: 4.00
    },
    {
       nome: 'Sandwich',
       views: 13203,
       id:'#popnow4',
-      img: '../assets/images/special-menu/img_product.png'
+      img: '../assets/images/special-menu/img_product.png',
+      preco: 6.00
    }, 
    {
       nome: 'Hot Milk',
       views: 15533,
       id:'#popnow5',
-      img: '../assets/images/special-menu/img_product-4.png'
+      img: '../assets/images/special-menu/img_product-4.png',
+      preco: 3.00
    },
    {
       nome: 'Coffe Ice Cream',
       views: 3703,
       id:'#popnow6',
-      img: '../assets/images/special-menu/img_product-5.png'
+      img: '../assets/images/special-menu/img_product-5.png',
+      preco: 5.00
    },
    {
       nome: 'Cappucino',
       views: 11983,
       id:'#popnow7',
-      img: '../assets/images/special-menu/img_product-1.png'
+      img: '../assets/images/special-menu/img_product-1.png',
+      preco: 4.50
    },
    {
       nome: 'Moccacinno',
       views: 7564,
       id:'#popnow8',
-      img: '../assets/images/special-menu/img_product-2.png'
+      img: '../assets/images/special-menu/img_product-2.png',
+      preco: 5.00
    },
    {
       nome: 'Waffle Ice Creme',
       views: 25678,
       id:'#popnow9',
-      img: '../assets/images/special-menu/img_product-3.png'
-   }
-   ,
+      img: '../assets/images/special-menu/img_product-3.png',
+      preco: 6.50
+   },
    {
       nome: 'Black Coffee',
       views: 25678,
       id:'#popnow10',
-      img: '../assets/images/special-menu/img_product-7.jpg'
-   }
-   ,
+      img: '../assets/images/special-menu/img_product-7.jpg',
+      preco: 2.00
+   },
    {
       nome: 'Orange Juice',
       views: 25678,
       id:'#popnow11',
-      img: '../assets/images/special-menu/img_product-8.png'
-   }
-   ,
+      img: '../assets/images/special-menu/img_product-8.png',
+      preco: 3.50
+   },
    {
       nome: 'Banoffee',
       views: 25678,
       id:'#popnow12',
-      img: '../assets/images/special-menu/img_product-9.jpg'
-   }
-   ,
+      img: '../assets/images/special-menu/img_product-9.jpg',
+      preco: 4.00
+   },
    {
       nome: 'Misto Quente',
       views: 25678,
       id:'#popnow13',
-      img: '../assets/images/special-menu/img_product-10.jpg'
-   }
-   ,
+      img: '../assets/images/special-menu/img_product-10.jpg',
+      preco: 5.50
+   },
    {
       nome: 'Brownie',
       views: 25678,
       id:'#popnow14',
-      img: '../assets/images/special-menu/img_product-11.jpg'
-   }   
-   ,
+      img: '../assets/images/special-menu/img_product-11.jpg',
+      preco: 3.00
+   },   
    {
       nome: 'Apple Pie',
       views: 25678,
       id:'#popnow15',
-      img: '../assets/images/special-menu/Apple-Pie_8.webp'
+      img: '../assets/images/special-menu/Apple-Pie_8.webp',
+      preco: 4.50
    }
 ];
 
@@ -248,7 +257,7 @@ CoffeesArray.forEach((cafe, index) => {
       cartDiv.classList.add('cart-div')
 
       let cartQntd = document.createElement('span')
-      cartQntd.innerHTML = 0
+      cartQntd.innerHTML = 1
       let cartGain = document.createElement('span')
       cartGain.innerHTML = '>>'
       let cartLoose = document.createElement('span')
@@ -271,19 +280,37 @@ CoffeesArray.forEach((cafe, index) => {
       
       buyDiv.classList.add('buyDiv')
 
+      let priceContainer= document.createElement('div')
+      priceContainer.classList.add('price-container')
+      let price = document.createElement('span')
+      price.innerHTML = `${info[index].preco.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}`
+      priceContainer.appendChild(price)
+
       bigMenu.appendChild(topPart)
       bigMenu.appendChild(image)
       bigMenu.appendChild(cartDiv)
+      bigMenu.appendChild(priceContainer)
       bigMenu.appendChild(buyDiv)
 
       fullScreen.appendChild(bigMenu)
 
+      var prices = 0;
+      let c = 1;
+
       cartGain.addEventListener('click', () => {
          cartQntd.innerHTML++
+         for(c; c<=cartQntd.innerHTML; c++) {
+         prices = prices + info[index].preco
+         }
+         price.innerHTML = `${prices.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}`
       })
       cartLoose.addEventListener('click', () => {
-         if(cartQntd.innerHTML > 0) {
+         if(cartQntd.innerHTML > 1) {
+            c--
             cartQntd.innerHTML--
+            
+            prices = prices - info[index].preco
+            price.innerHTML = `${prices.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}`
          }
       })
 
