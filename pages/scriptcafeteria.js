@@ -248,7 +248,7 @@ CoffeesArray.forEach((cafe, index) => {
       cartDiv.classList.add('cart-div')
 
       let cartQntd = document.createElement('span')
-      cartQntd.innerHTML = '0'
+      cartQntd.innerHTML = 0
       let cartGain = document.createElement('span')
       cartGain.innerHTML = '>>'
       let cartLoose = document.createElement('span')
@@ -277,6 +277,15 @@ CoffeesArray.forEach((cafe, index) => {
       bigMenu.appendChild(buyDiv)
 
       fullScreen.appendChild(bigMenu)
+
+      cartGain.addEventListener('click', () => {
+         cartQntd.innerHTML++
+      })
+      cartLoose.addEventListener('click', () => {
+         if(cartQntd.innerHTML > 0) {
+            cartQntd.innerHTML--
+         }
+      })
 
       close.addEventListener('click', () => {
          fullScreen.remove()
