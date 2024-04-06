@@ -270,10 +270,10 @@ CoffeesArray.forEach((cafe, index) => {
       let buyDiv = document.createElement('div')
 
       let buyBtn = document.createElement('button')
-      buyBtn.innerHTML = 'Finalizar compra'
+      buyBtn.innerHTML = 'Finalize Purchase'
 
       let cartBtn = document.createElement('p')
-      cartBtn.innerHTML = 'Ver carinho'
+      cartBtn.innerHTML = 'See Cart'
 
       buyDiv.appendChild(buyBtn)
       buyDiv.appendChild(cartBtn)
