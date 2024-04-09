@@ -321,4 +321,33 @@ CoffeesArray.forEach((cafe, index) => {
 })
 
 
-let avaliations = document.querySelectorAll('.person')
+let avaliations = document.querySelectorAll('.person'),
+   currentImageIndex = 0,
+   max = avaliations.length,
+   time = 5000
+
+   function nextImage() {
+      avaliations[currentImageIndex].classList.remove('activated')
+
+      currentImageIndex++
+
+      if (currentImageIndex > max - 1)
+         currentImageIndex = 0
+
+      console.log(currentImageIndex)
+
+      avaliations[currentImageIndex].classList.add('activated')
+   }
+
+   function start() {
+      setInterval(() => {
+         //troca de imagem
+         nextImage()
+      }, time)
+   }
+
+   window.addEventListener('load', start)
+
+
+
+

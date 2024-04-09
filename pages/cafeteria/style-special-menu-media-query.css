@@ -32,6 +32,8 @@
 
    /* container geral */
    .popular-coffeess {
+      opacity: 0;
+
       position: absolute;
       top: 4rem;
       
@@ -372,6 +374,7 @@
       justify-content: center;
       gap: 1rem;
       width: 100%;
+      height: 100%;
 
       input {
          cursor: pointer;
@@ -381,4 +384,10 @@
       }
    }
 }
+}
+
+@media (width <= 1436px) {
+   .popular-nows {
+      height: 100%;
+   }
 }

@@ -3,8 +3,9 @@
 .avaliations {
    position: relative;
    height: 485px;
-   width: 100%;
+   width: 100dvw;
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
 
@@ -20,6 +21,7 @@
 
    .p-container {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -44,14 +46,17 @@
       margin: 10px 2.5rem;
 
       .people {
+
          display: flex;
+         flex-wrap: wrap;
          align-items: center;
          justify-content: space-between;
          gap: 5rem;
          .person {
             position: absolute;
-            /* right: 22rem; */
+            right: 0rem;
             opacity: 0;
+            scale: 0;
 
             height: 300px;
             width: 235px;
@@ -62,9 +67,14 @@
             border: 4px solid #FFD390;
             box-shadow: 1px 1px 25px #5a595927;
 
+            transition: all .3s ease-in-out;
+
             .description {
                position: absolute;
-               top: 11rem;
+               top:11rem;
+               left: -18rem;
+               opacity: 0;
+               scale: 0;
                transform: translateX(1.8rem);
                background-color: #FFCB7C;
                border: 6px solid #ffd390;
@@ -80,21 +90,52 @@
                   margin-bottom: .4rem;
                }
                p {
+                  width: 0px;
+                  font-size: 14px;
+                  padding: 0px .6rem;
+                  margin-bottom: .4rem;
+
+                  transition: all .3s ease-in-out;
+               }
+
+               transition: all .8s ease-in-out;
+            }
+         }
+
+         .activated {
+            position: absolute;
+            right: 22rem;
+            opacity: 1;
+            scale: 1;
+
+            .description {
+               position: absolute;
+               top: 11rem;
+               left: 0rem;
+               opacity: 1;
+               scale: 1;
+               transform: translateX(1.8rem);
+               background-color: #FFCB7C;
+               border: 6px solid #ffd390;
+               border-radius: 12px;
+               
+               h2, p {
+                  color: #2F2105;
+               }
+
+               h2 {
+                  font-size: 18px;
+                  padding: 0px .6rem;
+                  margin-bottom: .4rem;
+               }
+               p {
+                  width: 100%;
                   font-size: 14px;
                   padding: 0px .6rem;
                   margin-bottom: .4rem;
                }
             }
          }
-      }
-
-      .person.activated {
-         position: absolute;
-         /* right: 22rem; */
-         right: 22rem;
-         z-index: 2;
-
-         opacity: 1;
       }
    }
 }
