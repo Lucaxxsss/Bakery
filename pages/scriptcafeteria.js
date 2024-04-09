@@ -321,3 +321,4 @@ CoffeesArray.forEach((cafe, index) => {
 })
 
 
+let avaliations = document.querySelectorAll('.person')

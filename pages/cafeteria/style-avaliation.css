@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.avaliations {
+   position: relative;
+   height: 485px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   .bg-small{
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-image: url('../../assets/images/bg-image-small.png');
+      background-repeat: no-repeat;
+   }
+
+
+   .p-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 945px;
+      height: 100%;
+
+      h1 {
+         text-align: center;
+         font-size: 32px;
+         margin-bottom: 1rem;
+      }
+
+      p {
+         color: #7E7D7A;
+         font-size: 18px;
+         width: 352px;
+      }
+   }
+
+
+   .people-avaliations {
+      margin: 10px 2.5rem;
+
+      .people {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 5rem;
+         .person {
+            position: absolute;
+            /* right: 22rem; */
+            opacity: 0;
+
+            height: 300px;
+            width: 235px;
+            border-radius: 12px;
+            background-image: url(../../assets/images/Unknown_person.jpg);
+            background-size: cover;
+            background-position: center;
+            border: 4px solid #FFD390;
+            box-shadow: 1px 1px 25px #5a595927;
+
+            .description {
+               position: absolute;
+               top: 11rem;
+               transform: translateX(1.8rem);
+               background-color: #FFCB7C;
+               border: 6px solid #ffd390;
+               border-radius: 12px;
+               
+               h2, p {
+                  color: #2F2105;
+               }
+
+               h2 {
+                  font-size: 18px;
+                  padding: 0px .6rem;
+                  margin-bottom: .4rem;
+               }
+               p {
+                  font-size: 14px;
+                  padding: 0px .6rem;
+                  margin-bottom: .4rem;
+               }
+            }
+         }
+      }
+
+      .person.activated {
+         position: absolute;
+         /* right: 22rem; */
+         right: 22rem;
+         z-index: 2;
+
+         opacity: 1;
+      }
+   }
+}
