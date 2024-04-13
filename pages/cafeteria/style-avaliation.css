@@ -16,6 +16,7 @@
       width: 100%;
       background-image: url('../../assets/images/bg-image-small.png');
       background-repeat: no-repeat;
+      background-attachment: fixed;
    }
 
 

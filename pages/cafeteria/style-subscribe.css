@@ -1,0 +1,87 @@
+.subscribe {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+
+   .subs-container {
+      margin: 8rem 0rem;
+
+      background-image: url(../../assets/images/unsplash_ftA71vetxuo.png);
+      background-repeat: no-repeat;
+      width: 73.125rem;
+      height: 24.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      color: white;
+      h1 {
+         pointer-events: none;
+
+         font-size: 2rem;
+         font-weight: 500;
+      }
+
+      .email-order {
+         margin-top: 2rem;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         background-color: white;
+         padding: .3rem 2rem;
+         border-radius: 30px;
+         gap: 20px;
+         
+
+         input {
+            width: 280px;
+            border: none;
+            background-color: transparent;
+            font-size: 0.875rem;
+            color: #7E7D7A;
+         }
+
+         input:focus {
+            background-color: transparent;
+            border: 1px solid white;
+            outline: none;
+         }
+
+
+         button {
+            position: relative;
+            z-index: 1;
+
+            cursor: pointer;
+
+            font-size: 0.875rem;
+            color: #2F2105;
+            background-color: #ffffff;
+            border: 1px solid #2F2105;
+            border-radius: 30px;
+            padding: .5rem 1rem;
+            transform: translateX(1.7rem);
+
+            transition: all .5s ease-in-out;
+         }
+
+         button::before,
+         button::after {
+            position: absolute;
+            content: '';
+            border: none;
+            z-index: -1;
+         }
+
+         button:hover {
+            border: 1px solid #2F2105;
+            color: white;
+            box-shadow: inset 10.5rem 0rem 0rem 0rem #2F2105;
+            scale: 0.95;
+         }
+      }
+   }
+}
