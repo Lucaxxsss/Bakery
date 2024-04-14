@@ -347,7 +347,3 @@ let avaliations = document.querySelectorAll('.person'),
    }
 
    window.addEventListener('load', start)
-
-
-
-
