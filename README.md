@@ -1,4 +1,4 @@
-#EN
+# EN
 
 ## Bakery
 
@@ -21,7 +21,7 @@ This project was created with the goal of practicing beginner front-end developm
    git clone https://github.com/your-username/bakery.git
 
 
-#PT-BR
+# PT-BR
 
 ## Bakery
 
